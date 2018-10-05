@@ -1,3 +1,11 @@
 #main-navbar {
     height: 50px;
+
+   
 }
+
+li a {
+    color: white;
+    padding: 5px
+}
+
