@@ -4,12 +4,17 @@
    
 }
 
-li a {
+li a, .dropdown > a {
     color: white;
     padding: 16px;
 }
 
 li.activated a {
     background-color: #00695f;
+}
+
+#id-titlebar-dropdown .dropdown-menu {
+    right: 0;
+    left: unset;
 }
 
