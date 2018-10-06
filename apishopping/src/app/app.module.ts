@@ -8,6 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SupportsComponent } from './supports/supports.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
+import { PagetitleComponent } from './cores/pagetitle/pagetitle.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     GalleryComponent,
     SupportsComponent,
     CartComponent,
-    HomeComponent
+    HomeComponent,
+    PagetitleComponent
   ],
   imports: [
     BrowserModule,
