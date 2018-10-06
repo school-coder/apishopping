@@ -6,6 +6,10 @@
 
 li a {
     color: white;
-    padding: 5px
+    padding: 16px;
+}
+
+li.activated a {
+    background-color: #00695f;
 }
 
