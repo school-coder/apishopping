@@ -4,9 +4,10 @@
    
 }
 
-li a, .dropdown > a {
+li > a, .dropdown > a , a > i{
     color: white;
     padding: 16px;
+    cursor: pointer;
 }
 
 li.activated a {
