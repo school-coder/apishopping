@@ -1,0 +1,21 @@
+#main-navbar {
+    height: 50px;
+    background-color: #009688;
+   
+}
+
+li > a, .dropdown > a , a > i{
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+li.activated a {
+    background-color: #00695f;
+}
+
+#id-titlebar-dropdown .dropdown-menu {
+    right: 0;
+    left: unset;
+}
+
