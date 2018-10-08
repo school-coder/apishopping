@@ -7,24 +7,34 @@
     line-height: 1;
     text-transform: uppercase;
     }
-    
-.toppane {
-        background-color: transparent;
-        position: inherit;
-        max-width: 550px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-         }
+.container{
+    width: available;
+    height: available;
+}
+.toppane{
+    width: available;
+    border-collapse: collapse;
+  
+}
 
-    
+.rightpane{
+    width: available;
+    height: available;
+    position: relative;
+    margin-left: 43%;
+    border-collapse: collapse;
+}
 
-    .leftpane{
-        width: 25%;
-    }
+.leftpane{
+    width: 25%;
+    min-width: 350px;
+    max-height: available;
+    min-height: 400px;
+    float: left;
+        border-collapse: collapse;
+}
 
-    .rightpane{
-        width: 75%
-    }
+  
     .brand-subheading {
         color: #333333;
         font-size: 48PX;
