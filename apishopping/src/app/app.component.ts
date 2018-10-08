@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'apishopping';
+  show_side_bar: boolean;
+  
+  cartClickEventHandler($event){
+    console.log("Event received: "+ $event);
+    this.show_side_bar = $event;
+  }
 }

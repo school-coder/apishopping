@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -11,6 +11,8 @@ export class TitlebarComponent implements OnInit {
 
   currentUrl: string;
   show_sidebar: boolean;
+
+  @Output() cartEvent = new EventEmitter<boolean>();
 
   constructor(private router: Router) {
       this.router.events.subscribe((_: NavigationEnd) => { 
@@ -28,6 +30,7 @@ export class TitlebarComponent implements OnInit {
 
   onCartClick(){
     this.show_sidebar = !this.show_sidebar;
+    this.cartEvent.emit(this.show_sidebar);
     console.log("Cart Click is done!"+ this.show_sidebar);
   }
 }

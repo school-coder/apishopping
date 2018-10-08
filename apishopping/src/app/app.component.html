@@ -1,9 +1,9 @@
 <div id="container">
     
-    <app-titlebar></app-titlebar>
+    <app-titlebar (cartEvent)="cartClickEventHandler($event)"></app-titlebar>
   
     <div id="content-wrapper">
-      <div id="content">
+      <div id="content" [class.full]="show_side_bar !== true">
         <router-outlet></router-outlet>
       </div>
 
