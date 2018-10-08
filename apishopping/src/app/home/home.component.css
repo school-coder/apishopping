@@ -79,39 +79,6 @@
         line-height: 1.5;
     }
     
-    .btn.btn-primary, .btn.btn-primary.disabled, .btn.btn-primary[disabled], .btn.btn-primary.disabled:hover, .btn.btn-primary[disabled]:hover, a.btn.btn-primary.disabled, a.btn.btn-primary[disabled], a.btn.btn-primary.disabled:hover, a.btn.btn-primary[disabled]:hover {
-        color: #ffffff;
-        background-color: #009688;
-        border: 2px solid #009688;
-        background-image: none;
-    }
-    
-    .btn:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), .btn.disabled:not(.btn-primary):not(.btn-secondary):not(.btn-secondary):not(.dropdown-toggle), .btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn.disabled:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle){
-        color: #009688;
-        background-color: #ffffff;
-        border: 2px solid #009688;
-    }
-    
-    #home-register-button {
-        margin-left: 10px;
-    }
-    
-    a, a:hover{
-        color: #009688;
-        cursor: pointer;
-    }
-    
-    .btn {
-        border-radius: 0;
-        background-image: none;
-        box-shadow: none;
-        padding: 5px 15px 6px 15px;
-        font-weight: normal;
-        font-size: 16px;
-    }
-    .btn.btn-primary, .btn.btn-primary, .btn.btn-primary span {
-        color: #ffffff;
-    }
     
     .marketing-brand-box-body {
         font-size: 16px;
