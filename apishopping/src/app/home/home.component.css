@@ -1,0 +1,72 @@
+.brand-heading {color: #1776BF;
+font-size: 48PX;
+font-weight: 700;
+text-shadow: none;
+white-space: nowrap;
+line-height: 1;
+text-transform: uppercase;
+}
+
+.brand-caption {
+    background-color: transparent;
+    position: inherit;
+    max-width: 550px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 16%;
+}
+
+.home-bg-1 {
+    background-image: url(/static/images/background1.jpg);
+}
+.brand-subheading {
+    color: #333333;
+    font-size: 48PX;
+    font-weight: 300;
+    text-shadow: none;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.brand-sub-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333333;
+    padding-top: 5%;
+    width: 410px;
+    line-height: 1.5;
+}
+
+.btn.btn-primary, .btn.btn-primary.disabled, .btn.btn-primary[disabled], .btn.btn-primary.disabled:hover, .btn.btn-primary[disabled]:hover, a.btn.btn-primary.disabled, a.btn.btn-primary[disabled], a.btn.btn-primary.disabled:hover, a.btn.btn-primary[disabled]:hover {
+    color: #ffffff;
+    background-color: #1776BF;
+    border: 2px solid #1776BF;
+    background-image: none;
+}
+
+.btn:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), .btn.disabled:not(.btn-primary):not(.btn-secondary):not(.btn-secondary):not(.dropdown-toggle), .btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn.disabled:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle){
+    color: #1776BF;
+    background-color: #ffffff;
+    border: 2px solid #1776BF;
+}
+
+#home-register-button {
+    margin-left: 10px;
+}
+
+a, a:hover{
+    color: #1776BF;
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 0;
+    background-image: none;
+    box-shadow: none;
+    padding: 5px 15px 6px 15px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.btn.btn-primary, .btn.btn-primary, .btn.btn-primary span {
+    color: #ffffff;
+}
