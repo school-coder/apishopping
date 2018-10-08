@@ -1,7 +1,8 @@
 .brand-heading {color: #009688;
-    font-size: 48PX;
-    font-weight: 700;
-    text-shadow: none;
+    font-size: 55PX;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px #acacac;
     white-space: nowrap;
     line-height: 1;
     text-transform: uppercase;
@@ -15,6 +16,15 @@
         padding-bottom: 20px;
         height: calc(100vh - 200px);
     }
+
+    .brand-sub-text {
+        color: #273635;
+        font-size: 48PX;
+        font-weight: 300;
+        text-shadow: none;
+        white-space: nowrap;
+        line-height: 1;
+    }
     
     .brand-subheading {
         color: #333333;
@@ -23,6 +33,17 @@
         text-shadow: none;
         white-space: nowrap;
         line-height: 1;
+    }
+
+    .subscript-text{
+        color: #82c4be;
+        font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: none;
+    white-space: nowrap;
+    line-height: 1;
+    text-transform: uppercase;
     }
     
     .fa {
@@ -35,7 +56,7 @@
     }
     
     .brand-sub-text {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 300;
         color: #333333;
         padding-top: 5%;
