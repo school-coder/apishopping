@@ -13,7 +13,7 @@ text-transform: uppercase;
     max-width: 550px;
     padding-right: 20px;
     padding-bottom: 20px;
-    margin-top: 16%;
+    height: calc(100vh - 250px);
 }
 
 .brand-subheading {
@@ -118,7 +118,7 @@ a, a:hover{
 
 
 .paper {
-    background: #a4c9c9;
+    background: #ffffff;
     padding: 30px;
   }
   
@@ -128,27 +128,35 @@ a, a:hover{
     /* Styles to distinguish sheets from one another */
     box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
     border: 1px solid #bbb;
+    width: 95%;
+    margin: 40px;
+
   }
   
   .paper::before,
   .paper::after {
     content: "";
     position: absolute;
-    height: 95%;
-    width: 99%;
+    height: 80%;
+    width: 94%;
     background-color: #eee;
+
   }
   
   .paper::before {
-    right: 15px;
-    top: 0;
+    right: 27px;
+    top: 27px;
+    -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg);
     z-index: -1;
+
   }
   
   .paper::after {
-    top: 5px;
+    top: 38px;
     right: -5px;
+    -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
     z-index: -2;
+
   }
