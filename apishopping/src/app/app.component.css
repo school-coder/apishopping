@@ -21,6 +21,7 @@
     background-color: #EEE;
     height: inherit;
     margin-right: -250px;
+    border-left: 1px solid #CCC;
 }
 
 footer {

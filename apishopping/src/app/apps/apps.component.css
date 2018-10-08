@@ -1,0 +1,10 @@
+.left-nav a.active {
+    border-left: 2px solid;
+    border-right: none;
+}
+
+.left-nav a {
+    border-right: 1px solid;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
