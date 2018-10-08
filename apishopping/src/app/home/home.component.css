@@ -8,16 +8,23 @@
     text-transform: uppercase;
     }
     
-    .brand-caption {
+.toppane {
         background-color: transparent;
         position: inherit;
         max-width: 550px;
         padding-right: 20px;
         padding-bottom: 20px;
-        height: calc(100vh - 200px);
-    }
+         }
 
     
+
+    .leftpane{
+        width: 25%;
+    }
+
+    .rightpane{
+        width: 75%
+    }
     .brand-subheading {
         color: #333333;
         font-size: 48PX;
