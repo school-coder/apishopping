@@ -1,4 +1,4 @@
-.brand-heading {color: #1776BF;
+.brand-heading {color: #009688;
 font-size: 48PX;
 font-weight: 700;
 text-shadow: none;
@@ -28,6 +28,15 @@ text-transform: uppercase;
     line-height: 1;
 }
 
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .brand-sub-text {
     font-size: 24px;
     font-weight: 300;
@@ -39,15 +48,15 @@ text-transform: uppercase;
 
 .btn.btn-primary, .btn.btn-primary.disabled, .btn.btn-primary[disabled], .btn.btn-primary.disabled:hover, .btn.btn-primary[disabled]:hover, a.btn.btn-primary.disabled, a.btn.btn-primary[disabled], a.btn.btn-primary.disabled:hover, a.btn.btn-primary[disabled]:hover {
     color: #ffffff;
-    background-color: #1776BF;
-    border: 2px solid #1776BF;
+    background-color: #009688;
+    border: 2px solid #009688;
     background-image: none;
 }
 
 .btn:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), .btn.disabled:not(.btn-primary):not(.btn-secondary):not(.btn-secondary):not(.dropdown-toggle), .btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn.disabled:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle), a.btn[disabled]:not(.btn-primary):not(.btn-secondary):not(.dropdown-toggle){
-    color: #1776BF;
+    color: #009688;
     background-color: #ffffff;
-    border: 2px solid #1776BF;
+    border: 2px solid #009688;
 }
 
 #home-register-button {
@@ -55,7 +64,7 @@ text-transform: uppercase;
 }
 
 a, a:hover{
-    color: #1776BF;
+    color: #009688;
     cursor: pointer;
 }
 
@@ -69,4 +78,44 @@ a, a:hover{
 }
 .btn.btn-primary, .btn.btn-primary, .btn.btn-primary span {
     color: #ffffff;
+}
+
+.marketing-brand-box-body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    clear: left;
+}
+
+.marketing-brand-box-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.icon-data {
+    color: #009688;
+    font-size: 4em;
+}
+
+
+.home-bg-image{
+    background-image: url("../../assets/img/background2.jpg");
+    
+
+}
+
+.home-bg {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
