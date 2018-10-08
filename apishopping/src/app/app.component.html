@@ -2,9 +2,16 @@
     
     <app-titlebar></app-titlebar>
   
-    <div id="content">
-      <router-outlet></router-outlet>
+    <div id="content-wrapper">
+      <div id="content">
+        <router-outlet></router-outlet>
+      </div>
+
+      <div id="id-cart-list">
+        <app-cart></app-cart>
+      </div>
     </div>
+    
 
     <footer>
       <p>&copy; TechInterrupt 2018, India</p>

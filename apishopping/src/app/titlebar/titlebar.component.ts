@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -10,6 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class TitlebarComponent implements OnInit {
 
   currentUrl: string;
+  show_sidebar: boolean;
 
   constructor(private router: Router) {
       this.router.events.subscribe((_: NavigationEnd) => { 
@@ -18,11 +19,15 @@ export class TitlebarComponent implements OnInit {
           console.log("The current url is "+ this.currentUrl);
         }
       });
-      
+      this.show_sidebar = false;
    }
 
   ngOnInit() {
     
   }
 
+  onCartClick(){
+    this.show_sidebar = !this.show_sidebar;
+    console.log("Cart Click is done!"+ this.show_sidebar);
+  }
 }

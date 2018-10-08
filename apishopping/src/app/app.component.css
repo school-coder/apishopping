@@ -1,6 +1,26 @@
-#content {
+#content-wrapper {
     height: calc(100vh - 90px);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+}
+
+#content {
+    width: calc(100% - 250px);
+    height: inherit;
+
+}
+
+#content.full{
+    width: 100%;
+}
+
+#id-cart-list {
+    width: 250px;
+    background-color: #EEE;
+    height: inherit;
+    margin-right: -250px;
 }
 
 footer {
