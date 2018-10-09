@@ -12,6 +12,7 @@ import { PagetitleComponent } from './cores/pagetitle/pagetitle.component';
 import { MyusageComponent } from './myusage/myusage.component';
 import { AppsComponent } from './apps/apps.component';
 import { NgxGaugeModule } from 'ngx-gauge';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgxGaugeModule } from 'ngx-gauge';
     HomeComponent,
     PagetitleComponent,
     MyusageComponent,
-    AppsComponent
+    AppsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
