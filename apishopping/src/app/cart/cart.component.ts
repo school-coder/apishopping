@@ -18,4 +18,10 @@ export class CartComponent implements OnInit {
   ngOnInit() {
   }
 
+  removeAPI(api: api) {
+    console.log("Selected API: "+ api.name);
+    var index = this.apis.indexOf(api);
+    this.apis.splice(index, 1);
+  }
+
 }
