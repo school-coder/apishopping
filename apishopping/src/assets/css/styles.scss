@@ -1,9 +1,10 @@
 // set the variables you wish to change
 $primary:    #009688;
 
-.left-nav .nav-tabs .nav-link.active {
+.nav-tabs, .left-nav .nav-tabs .nav-link.active {
    border-color: $primary; 
 }
+
 
 // import in the bootstrap SASS file
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss'

@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppsComponent implements OnInit {
 
   title = "Applications";
-  
+
+  gaugeType = "semi";
+  gaugeValue = 28;
+  gaugeLabel = "Number of Request";
+  gaugeAppendText = "req";
+
   constructor() { }
 
   ngOnInit() {

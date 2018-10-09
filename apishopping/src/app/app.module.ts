@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { PagetitleComponent } from './cores/pagetitle/pagetitle.component';
 import { MyusageComponent } from './myusage/myusage.component';
 import { AppsComponent } from './apps/apps.component';
+import { NgxGaugeModule } from 'ngx-gauge';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppsComponent } from './apps/apps.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxGaugeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

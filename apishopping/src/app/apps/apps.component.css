@@ -1,9 +1,13 @@
-.left-nav a.active {
+.left-nav .nav.flex-column a.active {
     border-left: 2px solid;
     border-right: none;
 }
 
-.left-nav a {
+.nav.nav-tabs:not(.flex-column) a.active {
+    border-bottom: none;
+}
+
+.left-nav .nav.flex-column  a {
     border-right: 1px solid;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

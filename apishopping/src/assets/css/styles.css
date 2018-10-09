@@ -13,3 +13,18 @@ body {
 .p-left40{
     padding-left: 40px;
 }
+
+.api-card {
+    border: 1px solid #EEE;
+    height: 100px;
+    padding: 0;
+    display: inline-flex;
+    margin: 10px 10px 0 0;
+    width: 24%;
+}
+
+.api-card-left {
+    width: 30%;
+    background: #EEE;
+    padding: 20px 20px;
+}

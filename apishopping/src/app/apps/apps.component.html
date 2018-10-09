@@ -12,7 +12,71 @@
   </div>
 
   <div class="tab-content col-10" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <h3>Spark Application</h3>
+      <p>The application is used to connect multiple devices based on the location</p>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">APIs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">Key Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">Usage</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+          <br />
+          <div class="row-fluid">
+            <div class="col-xl-3 api-card">
+              <div style="height:inherit" class="text-left float-left api-card-left">
+                <img class="card-img-left" src="assets/img/sugarsync.png" height="64px" width="64px">
+              </div>
+              <div class="card-body float-left">
+                <h4 class="card-title ">SugarSync API</h4>
+              </div>
+            </div>
+
+            <div class="col-xl-3 api-card">
+              <div style="height:inherit" class="text-left float-left api-card-left">
+                <img class="card-img-left" src="assets/img/cloudflare.png" height="64px" width="64px">
+              </div>
+              <div class="card-body float-left">
+                <h4 class="card-title ">CloudFlare API</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <br />
+          <div class="row">
+            <div class="col-2">
+                API Key
+            </div>
+            <div class="col-10">
+                a67092fb-cb9a-415b-a191-71d11b6e4947
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <br />
+            <ngx-gauge [type]="gaugeType" 
+            [value]="gaugeValue" 
+            [label]="gaugeLabel"  
+            [append]="gaugeAppendText">
+            </ngx-gauge>
+        </div>
+      </div>
+    </div>
+
     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
