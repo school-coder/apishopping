@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-a:focus,a:active,a:visited,a:hover {
-    text-decoration: none;
+a:focus,a:active,a:visited,a:hover,
+button:focus, button:active, button:visited, button:hover {
+    text-decoration: none !important;
 }
 
 body {
@@ -21,10 +22,20 @@ body {
     display: inline-flex;
     margin: 10px 10px 0 0;
     width: 24%;
+    -webkit-box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.75);
+}
+
+.api-card .card-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .api-card-left {
     width: 30%;
     background: #EEE;
     padding: 20px 20px;
+    min-width: 100px;
 }

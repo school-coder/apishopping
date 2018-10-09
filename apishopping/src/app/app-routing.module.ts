@@ -5,6 +5,7 @@ import { SupportsComponent } from './supports/supports.component';
 import { HomeComponent } from './home/home.component';
 import { MyusageComponent } from './myusage/myusage.component';
 import { AppsComponent } from './apps/apps.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
     {
@@ -18,6 +19,10 @@ const routes: Routes = [
     {
       path: 'usage/:id',
       component: MyusageComponent
+    },
+    {
+      path: 'checkout',
+      component: CheckoutComponent
     },
     {
       path: 'apps',
