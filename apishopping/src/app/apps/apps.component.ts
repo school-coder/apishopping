@@ -10,10 +10,16 @@ export class AppsComponent implements OnInit {
   title = "Applications";
 
   gaugeType = "semi";
-  gaugeValue = 28;
+  gaugeValue = 1100;
   gaugeLabel = "Number of Request";
   gaugeAppendText = "req";
+  max = 2000;
 
+  thresholdConfig = {
+    '0': {color: 'green'},
+    '1000': {color: 'orange'},
+    '1500': {color: 'red'}
+  };
   constructor() { }
 
   ngOnInit() {

@@ -14,8 +14,17 @@
   <div class="tab-content col-10" id="v-pills-tabContent">
 
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-      <h3>Spark Application</h3>
-      <p>The application is used to connect multiple devices based on the location</p>
+      
+      <div class="row">
+        <div class="col-11">
+            <h3>Spark Application</h3>
+            <p>The application is used to connect multiple devices based on the location</p>
+        </div>
+        <div class="float-right">
+          <button class="btn btn-light"> Renew </button>
+        </div>
+      </div>
+      
 
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
@@ -59,20 +68,63 @@
           <br />
           <div class="row">
             <div class="col-2">
-                API Key
+              API Key
             </div>
             <div class="col-10">
-                a67092fb-cb9a-415b-a191-71d11b6e4947
+              a67092fb-cb9a-415b-a191-71d11b6e4947
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <br />
-            <ngx-gauge [type]="gaugeType" 
-            [value]="gaugeValue" 
-            [label]="gaugeLabel"  
-            [append]="gaugeAppendText">
-            </ngx-gauge>
+          <br />
+
+          <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6" style="line-height: 130px;">
+                      SugarSync API
+                    </div>
+        
+                    <div class="col-6">
+                      <ngx-gauge [type]="gaugeType" value="1100" [label]="gaugeLabel" [append]="gaugeAppendText" [max]="max"
+                        [thresholds]="thresholdConfig">
+                      </ngx-gauge>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-6" style="line-height: 130px;">
+                        CloudFlare API
+                      </div>
+          
+                      <div class="col-6">
+                        <ngx-gauge [type]="gaugeType" value="700" [label]="gaugeLabel" [append]="gaugeAppendText" [max]="max"
+                          [thresholds]="thresholdConfig">
+                        </ngx-gauge>
+                      </div>
+                    </div>
+            </div>
+
+            <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    Overall Usage
+                  </div>
+                  <div class="col-8">
+                    1800 / 4000 requests
+                  </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-4">
+                      UnBilled Amount
+                    </div>
+                    <div class="col-8">
+                      $18
+                    </div>
+                  </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
