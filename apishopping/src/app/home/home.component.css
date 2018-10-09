@@ -1,83 +1,20 @@
+.toppane{
+    width: available;
+    border-collapse: collapse;
+    height : available;
+  
+}
+
 .brand-heading {color: #009688;
-    font-size: 55PX;
-    font-weight: 900;
+    font-size: xx-large;
+    font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px #acacac;
     white-space: nowrap;
     line-height: 1;
     text-transform: uppercase;
     }
-.container{
-    width: available;
-    height: available;
-}
-.toppane{
-    width: available;
-    border-collapse: collapse;
-  
-}
 
-.rightpane{
-    width: available;
-    height: available;
-    position: relative;
-    margin-left: 43%;
-    border-collapse: collapse;
-}
-
-.leftpane{
-    width: 25%;
-    min-width: 350px;
-    max-height: available;
-    min-height: 400px;
-    float: left;
-        border-collapse: collapse;
-}
-
-  
-    .brand-subheading {
-        color: #333333;
-        font-size: 48PX;
-        font-weight: 300;
-        text-shadow: none;
-        white-space: nowrap;
-        line-height: 1;
-    }
-
-    .subscript-text{
-        color: #82c4be;
-        font-size: 18px;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: none;
-    white-space: nowrap;
-    line-height: 1;
-    text-transform: uppercase;
-    }
-    
-    .fa {
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    
-    .sub-text{
-        margin-top: 75px
-    }
-    
-    .brand-sub-text {
-        font-size: 30px;
-        font-weight: 300;
-        color: #333333;
-        text-shadow: none;
-        white-space: nowrap;
-        padding-top: 5%;
-        width: 410px;
-        line-height: 1.5;
-    }
     
     
     .marketing-brand-box-body {
@@ -89,40 +26,54 @@
         clear: left;
     }
     
+    .icon-data {
+        color: #009688;
+        font-size: 4em;
+margin-top:  2%
+    }
+    
     .marketing-brand-box-title {
         font-size: 25px;
         font-weight: 300;
         color: #333;
         float: left;
         margin-bottom: 10px;
+}
+
+
+    .subscript-text{
+        color: #82c4be;
+        font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    text-transform: uppercase;
+    }
+
+    .brand-sub-text {
+        font-size: 30px;
+        font-weight: 300;
+        color: #333333;
+        text-shadow: none;
+        white-space: nowrap;
+        padding-top: 2%;
+        width: 410px;
+        line-height: 1.5;
     }
     
-    .icon-data {
-        color: #009688;
-        font-size: 4em;
+
+    .container-class{
+        width: available;
+        height: available;
     }
-    
-    
-    .home-bg-image{
-        background-image: url("/assets/img/background2.jpg");
-    }
-    
-    .home-bg {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: -40px;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    }
-    
-    
     
     .paper {
         background: #FFF;
         padding: 30px;
+        height: 86%;
+        width: 95%;
       }
       
       .paper,
@@ -131,7 +82,7 @@
         /* Styles to distinguish sheets from one another */
         box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
         border: 1px solid #bbb;
-        width: 95%;
+        
         margin: 20px;
       }
       
