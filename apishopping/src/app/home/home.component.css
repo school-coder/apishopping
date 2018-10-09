@@ -2,13 +2,17 @@
     width: available;
     border-collapse: collapse;
     height : available;
+    margin-left: 3%
   
 }
 
 
 .column {
+    margin-top: 7%;
     float: left;
-    width: 33.33%;
+    width: 30%;
+    margin-left: 3%;
+    padding-right: 5%;
 }
 
 /* Clear floats after the columns */
@@ -32,26 +36,29 @@
     
     
     .marketing-brand-box-body {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 400;
         color: #333;
         line-height: 1.5;
         text-align: left;
         clear: left;
+        margin-left: 2%
     }
     
     .icon-data {
         color: #009688;
         font-size: 4em;
-margin-top:  2%
+        margin-top:  2%;
+        text-align: left;
     }
     
     .marketing-brand-box-title {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 300;
         color: #333;
         float: left;
         margin-bottom: 10px;
+        margin-left :2%
 }
 
 
