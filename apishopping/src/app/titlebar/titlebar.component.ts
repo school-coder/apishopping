@@ -31,6 +31,5 @@ export class TitlebarComponent implements OnInit {
   onCartClick(){
     this.show_sidebar = !this.show_sidebar;
     this.cartEvent.emit(this.show_sidebar);
-    console.log("Cart Click is done!"+ this.show_sidebar);
   }
 }

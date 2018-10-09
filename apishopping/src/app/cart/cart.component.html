@@ -1,16 +1,24 @@
 <div style="position: relative;">
 
-    <button class="btn btn-link" style="position: absolute; right: 10px;">Check Out</button>
+    <button class="btn btn-link" style="position: absolute; top: 0; right: 0">Check Out</button>
 
+    
 
-    <div class="api-card" >
-        <div style="height:inherit; min-width: 50px;" class="text-left float-left api-card-left">
-            <img class="card-img-left" src="assets/img/cloudflare.png" height="32px" width="32px">
+    <div class="container-fluid" style="padding-top: 50px;">
+    <div class="row" *ngFor="let api of apis" style="margin: 10px 0;">
+        <div class="col-2">
+            <img class="card-img-left" src="assets/img/{{api.icon}}" height="32px" width="32px">
         </div>
-        <div class="card-body float-left">
-            <p class="card-title ">CloudFlare API</p>
+        
+        <div class="col-8">
+            <p class="">{{api.name}}</p>
+        </div>
+
+        <div class="col-1">
+            <a href="javascript:;"><i class="material-icons">delete</i></a>
         </div>
     </div>
+  </div>
 
 </div>
 
