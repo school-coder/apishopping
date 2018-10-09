@@ -1,6 +1,9 @@
 <app-pagetitle [title]="title"></app-pagetitle>
 <div id="id-app-list" class="row p-left40 left-nav">
   <div style="border: none;" class="nav flex-column nav-tabs col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a (click)="setActiveTab('v-pills-basic-tab')" class="nav-link" [class.active]="active_tab=='v-pills-basic-tab'" id="v-pills-basic-tab"
+      data-toggle="pill" href="#v-pills-basic" role="tab" aria-controls="v-pills-basic" aria-selected="true">Basic
+      Information</a>
     <a (click)="setActiveTab('v-pills-apis-tab')" class="nav-link" [class.active]="active_tab=='v-pills-apis-tab'" id="v-pills-apis-tab"
       data-toggle="pill" href="#v-pills-apis" role="tab" aria-controls="v-pills-home" aria-selected="true">API
       Information</a>
@@ -15,14 +18,46 @@
 
   <div class="tab-content col-10" id="v-pills-tabContent">
 
+    <div class="tab-pane fade" [class.active]="active_tab=='v-pills-basic-tab'" [class.show]="active_tab=='v-pills-basic-tab'"
+      id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
+      <div class="row">
+        <div class="col-11">
+          <h3>Basic Information</h3>
+          <p>Provide name and description of the application</p>
+
+          <hr />
+          <form name="basic-form">
+            <div class="form-row">
+              <div class="col-4">
+                <h5>Application Name</h5>
+              </div>
+              <div class="col-4">
+                <input type="text" [(ngModel)]="app_name" class="form-control" name="app_name">
+              </div>
+            </div>
+            <hr />
+            <div class="form-row">
+              <div class="col-4">
+                <h5>Application Description</h5>
+              </div>
+              <div class="col-4">
+                <textarea [(ngModel)]="app_desc" class="form-control" name="app_desc"></textarea>
+              </div>
+            </div>
+          </form>
+          <button class="btn btn-light float-right" (click)="setActiveTab('v-pills-apis-tab')">Next</button>
+        </div>
+      </div>
+    </div>
+
     <!-- start of first tab content -->
     <div class="tab-pane fade" [class.active]="active_tab=='v-pills-apis-tab'" [class.show]="active_tab=='v-pills-apis-tab'"
       id="v-pills-apis" role="tabpanel" aria-labelledby="v-pills-apis-tab">
 
       <div class="row">
         <div class="col-11">
-          <h3>API Information</h3>
-          <p>The application is used to connect multiple devices based on the location</p>
+          <h3>{{app_name}}</h3>
+          <p>{{app_desc}}</p>
 
           <hr />
           <div class="row">
@@ -30,8 +65,8 @@
               <h5>SugarSync API</h5>
               <p>For one request, the payable amount is $0.01</p>
             </div>
-            <div class="col-8">
-              <input type="number">
+            <div class="col-4">
+              <input type="number" class="form-control" [(ngModel)]="count1">
             </div>
           </div>
           <hr />
@@ -40,8 +75,8 @@
               <h5>CloudFlare API</h5>
               <p>For one request, the payable amount is $0.01</p>
             </div>
-            <div class="col-8">
-              <input type="number">
+            <div class="col-4">
+              <input type="number" class="form-control" [(ngModel)]="count2">
             </div>
           </div>
           <button class="btn btn-light float-right" (click)="setActiveTab('v-pills-payments-tab')">Next</button>
@@ -57,7 +92,7 @@
       <h3>Payment Information</h3>
       <p>From this card information, the amount will be detected automatically</p>
 
-      <form>
+      <form name="payment-form">
         <div class="form-row">
           <div class="col-6">
 
@@ -70,7 +105,8 @@
           <div class="col-6 input-group">
 
 
-            <input type="text" class="form-control" id="cardnumber" placeholder="Card Number">
+            <input type="text" name="card_number" class="form-control" id="cardnumber" placeholder="Card Number"
+              [(ngModel)]="card_number">
             <div class="input-group-append">
               <span class="input-group-text" id="basic-addon2">
                 <i class="material-icons">credit_card</i>
@@ -83,7 +119,8 @@
 
         <div class="form-row">
           <div class="col-3">
-            <input type="text" class="form-control" id="exp_date" placeholder="Expiry: MM/YY">
+            <input type="text" name="exp_date" class="form-control" id="exp_date" placeholder="Expiry: MM/YY"
+              [(ngModel)]="expiry_date">
           </div>
 
           <div class="col-3">
@@ -100,18 +137,77 @@
           <i class="material-icons">info</i> This card will be used for future renewals of existing purchases.
         </p>
 
-        
+
       </form>
 
       <div class="col-11">
-          <button class="btn btn-light float-right" (click)="setActiveTab('v-pills-confirmation-tab');">Save and Proceed</button>
+        <button class="btn btn-light float-right" (click)="setActiveTab('v-pills-confirmation-tab');">Save and Proceed</button>
       </div>
     </div>
     <!-- end of second tab content -->
 
     <!-- start of third tab content -->
     <div class="tab-pane fade" [class.active]="active_tab=='v-pills-confirmation-tab'" [class.show]="active_tab=='v-pills-confirmation-tab'"
-      id="v-pills-confirmation" role="tabpanel" aria-labelledby="v-pills-confirmation-tab">...</div>
+      id="v-pills-confirmation" role="tabpanel" aria-labelledby="v-pills-confirmation-tab">
+      <div class="col-11">
+
+        <h2>{{app_name}}</h2>
+        <p>{{app_desc}}</p>
+
+        <hr />
+
+        <h3>API Information</h3>
+        <p>The application is used to connect multiple devices based on the location</p>
+
+        <hr />
+        <div class="row">
+          <div class="col-4">
+            <h5>Request count for 'SugarSync API'</h5>
+
+          </div>
+          <div class="col-8">
+            {{count1}}
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-4">
+            <h5>CloudFlare API</h5>
+
+          </div>
+          <div class="col-8">
+            {{count2}}
+          </div>
+        </div>
+
+        <hr />
+        <h3>Payment Information</h3>
+        <hr />
+        <div class="row">
+          <div class="col-4">
+            <h5>Card Number</h5>
+          </div>
+          <div class="col-8">
+            {{card_number}}
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-4">
+            <h5>Expiry date</h5>
+
+          </div>
+
+          <div class="col-8">
+            {{expiry_date}}
+          </div>
+        </div>
+        <button class="btn btn-light float-right" (click)="setActiveTab('v-pills-payments-tab')">Confirm and Subscribe</button>
+      </div>
+
+    </div>
     <!-- end of third tab content -->
 
   </div>

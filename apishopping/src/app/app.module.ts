@@ -13,6 +13,7 @@ import { MyusageComponent } from './myusage/myusage.component';
 import { AppsComponent } from './apps/apps.component';
 import { NgxGaugeModule } from 'ngx-gauge';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { FormsModule } from   '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxGaugeModule
+    NgxGaugeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

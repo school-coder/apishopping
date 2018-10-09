@@ -9,7 +9,16 @@ export class CheckoutComponent implements OnInit {
 
   title = "Check Out";
 
-  active_tab = "v-pills-apis-tab";
+  active_tab = "v-pills-basic-tab";
+
+  app_name: string;
+  app_desc: string;
+  
+  count1: string;
+  count2: string;
+
+  card_number: string;
+  expiry_date: string;
 
   constructor() { }
 
